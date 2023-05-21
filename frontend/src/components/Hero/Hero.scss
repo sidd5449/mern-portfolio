@@ -1,0 +1,35 @@
+.app__hero{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.app__hero-main{
+    display: flex;
+    flex-direction: column;
+    height: 94vh;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+    padding-top: 6vh;
+}
+.app__hero-main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+    p{
+        font-size: 3vw;
+        font-family: Yesteryear, cursive;
+    }
+
+    h1{
+        font-size: 10vw;
+        background: -webkit-linear-gradient(45deg,#38DB79, #0E3AA9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 100;
+    }
+    hr{
+        border: 3px solid var(--cta-color);
+        border-radius: 2vh;
+    }
+}

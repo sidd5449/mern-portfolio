@@ -1,0 +1,59 @@
+.app__sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: calc(6vw-2px);
+    padding-top: 6vh;
+    justify-content: space-between;
+    border-left: 2px solid var(--text-color);
+    position: fixed;
+    right: 0;
+}
+
+.app__sidebar-numbers{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    
+    a{
+        transition: all ease-in-out .2s;
+        &:visited{
+            color: var(--cta-color);
+        }
+    }
+
+
+
+}
+.app__sidebar-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+
+}
+.app__sidebar-socials{
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+
+    a{
+        transition: all ease-in-out 0.2s;
+        &:hover{
+            color: var(--cta-color);
+        }
+    }
+}
+.app__sidebar-scrollup{
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    border-top: 2px solid var(--text-color);
+    align-items: center;
+    justify-content: center;
+
+    a{
+        margin-top: 1.5vh;
+    }
+}
