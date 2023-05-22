@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&family=Yesteryear&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +6,12 @@
 }
 body{
     padding-left: 80px;
-    background: linear-gradient(45deg, #1d1d1d, #080808);
+    background: linear-gradient(45deg, #171717, #080808);
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     width: 0;
+    height: 0;
 }
 a{
     text-decoration: none;
@@ -17,7 +19,7 @@ a{
 }
 
 :root{
-    --text-color: #fff;
+    --text-color: #dcdcdc;
     --cta-color: #00656c;
 }
 p, a, h2, h3, h4, h5{
@@ -27,4 +29,9 @@ p, a, h2, h3, h4, h5{
 
 h1{
     font-family: 'Yesteryear', cursive;
+    background: -webkit-linear-gradient(45deg,#25d96d, #0936a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: max-content;
+    font-weight: 200;
 }

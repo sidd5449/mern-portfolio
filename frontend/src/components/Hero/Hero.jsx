@@ -3,6 +3,8 @@ import Sidebar from '../Sidebar/Sidebar';
 import './Hero.scss';
 import Logo from '../../assets/logo.png';
 
+
+const tags = ['FREELANCER','WEB DEVELOPER', 'UI DESIGNER']
 const Hero = () => {
   return (
     <div className="app__hero" id='hero'>
@@ -17,6 +19,11 @@ const Hero = () => {
             </div>
         </div>
         <Sidebar />
+        <div className="app__hero-tags">
+          {tags.map((item) => (
+            <p>{item}</p>
+          ))}
+        </div>
     </div>
   )
 }

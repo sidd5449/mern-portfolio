@@ -10,11 +10,13 @@
     justify-content: space-between;
     padding-bottom: 10vh;
     padding-top: 6vh;
+    
 }
 .app__hero-main-text{
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    // pointer-events: none;
 
     p{
         font-size: 3vw;
@@ -23,13 +25,40 @@
 
     h1{
         font-size: 10vw;
-        background: -webkit-linear-gradient(45deg,#38DB79, #0E3AA9);
+        background: -webkit-linear-gradient(45deg,#25d96d, #0936a8);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 100;
+        z-index: 1;
     }
     hr{
-        border: 3px solid var(--cta-color);
+        border: 1px solid var(--cta-color);
         border-radius: 2vh;
+    }
+}
+.app__hero-tags{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+
+
+    p{
+        font-size: 12vw;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke-color: rgba(255,255,255,0.05);
+        -webkit-text-stroke-width: 2px;
+        transition: all ease-in-out .2s;
+        z-index: 0;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }

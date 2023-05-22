@@ -1,0 +1,17 @@
+.app__about{
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    flex-wrap: wrap;
+    margin-top: 32vh;
+
+    h1{
+        font-size: 6vw;
+        
+    }
+    p{
+        line-height: 4.8vh;
+        word-spacing: 0.4vw;
+        color: var(--text-color);
+    }
+}
