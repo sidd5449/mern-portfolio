@@ -5,7 +5,7 @@ import axios from 'axios';
 const Portfolio = () => {
   const [workData, setworkData] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/getWork/').then((data) => {
+    axios.get('https://portfolio-5tz7.onrender.com/getWork/').then((data) => {
       setworkData(data);
       console.log(data);
     }).catch((err) => {console.log(err)})

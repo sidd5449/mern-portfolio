@@ -12,11 +12,11 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json({limit: "30mb", extended:true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended:true}));
-app.use(cors);
+app.use(cors());
 
 const PORT = 8080;
 
-app.use('/getWork', getWorkRouter);
+app.use('/', getWorkRouter);
 app.use('/getClient', getClientRouter);
 console.log();
 
