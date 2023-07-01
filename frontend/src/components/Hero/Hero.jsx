@@ -1,29 +1,14 @@
-import React from 'react'
-import Sidebar from '../Sidebar/Sidebar';
+import React from 'react';
 import './Hero.scss';
-import Logo from '../../assets/logo.png';
 
-
-const tags = ['FREELANCER','WEB DEVELOPER', 'UI DESIGNER']
 const Hero = () => {
   return (
-    <div className="app__hero" id='hero'>
-        <div className="app__hero-main">
-            <div className="app__hero-main-logo">
-                <img src={Logo} alt="logo" style={{width: '6vw'}} />
-            </div>
-            <div className="app__hero-main-text">
-                <p>Hello, I am</p>
-                <h1>Siddhesh Thakare</h1>
-                <hr />
-            </div>
-        </div>
-        <Sidebar />
-        <div className="app__hero-tags">
-          {tags.map((item) => (
-            <p>{item}</p>
-          ))}
-        </div>
+    <div className="app__hero">
+      <div className="app__hero-headings">
+        <h1 id='text-1'>SIDDHESH</h1>
+        <h1 id='text-2'>THAKARE</h1>
+      </div>
+      <p>building the bridge between <span id='span1'>Design</span> and <span id='span2'>Functionality</span></p>
     </div>
   )
 }

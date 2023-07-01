@@ -16,7 +16,7 @@ app.use(cors());
 
 const PORT = 8080;
 
-app.use('/', getWorkRouter);
+app.use('/getWorks', getWorkRouter);
 app.use('/getClient', getClientRouter);
 console.log();
 

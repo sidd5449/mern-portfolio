@@ -1,31 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import './Portfolio.scss';
 import axios from 'axios';
+import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const Portfolio = () => {
-  const [workData, setworkData] = useState([]);
-  useEffect(() => {
-    axios.get('https://portfolio-5tz7.onrender.com/getWork/').then((data) => {
-      setworkData(data);
-      console.log(data);
-    }).catch((err) => {console.log(err)})
-  })
+
+  const [works, setworks] = useState([]);
+
+    // axios.get('http://localhost:8080/getWorks').then((data) => {
+    //     setworks(data.data);
+    //     console.log(works);
+    // })  
+    
   
 
   return (
     <div className="app__portfolio">
-      <h1 style={{fontSize:'6vw'}}>My Portfolio</h1>
-      <div className="app__portfolio-cards">
-        {workData.map((data) => (
-          <div className="app__portfolio-card">
-            <h2>{data.title}</h2>
-            <p>{data.desc}</p>
-            <a href="">{data.ghLing}</a>
-            <a href="">{data.preview}</a>
+      <h1>My Portfolio</h1>
+      <div className="app__portfolio-content">
+        <div className="app__portfolio-image">
+          <img src="" alt="" />
+        </div>
+        <div className="app__portfolio-info">
+          <h2>Title</h2>
+          <p>Desc</p>
+          <div className="app__portfolio-icons">
+            <a href=""><FiGithub size={25} /></a>
+            <a href=""><FiExternalLink size={25} /></a>
           </div>
-        ))}
+        </div>
       </div>
-
     </div>
   )
 }

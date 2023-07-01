@@ -1,64 +1,29 @@
 .app__hero{
     display: flex;
-    justify-content: space-between;
-    
-}
-.app__hero-main{
-    display: flex;
     flex-direction: column;
-    height: 94vh;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-    padding-top: 6vh;
-    
-}
-.app__hero-main-text{
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-    // pointer-events: none;
-
-    p{
-        font-size: 3vw;
-        font-family: Yesteryear, cursive;
-    }
-
-    h1{
-        font-size: 10vw;
-        background: -webkit-linear-gradient(45deg,#25d96d, #0936a8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 100;
-        z-index: 1;
-    }
-    hr{
-        border: 1px solid var(--cta-color);
-        border-radius: 2vh;
-    }
-}
-.app__hero-tags{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    justify-content: space-between;
     align-items: center;
-    background: none;
-
-
-    p{
-        font-size: 12vw;
-        font-weight: 900;
-        color: transparent;
-        -webkit-text-stroke-color: rgba(255,255,255,0.05);
-        -webkit-text-stroke-width: 2px;
-        transition: all ease-in-out .2s;
-        z-index: 0;
-
-        &:hover{
-            transform: scale(1.1);
-        }
+    padding-top: 22vh;
+    
+    h1{
+        font-size: 5vw;
     }
+
+    #text-2{
+        margin-left: 10vw;
+        margin-top: 2vh;
+    }
+    p{
+        margin-top: 8vh;
+        width: 40vw;
+        font-size: 2vw;
+        text-align: center;
+        line-height: 6vh;
+    }
+
+}
+#span1{
+    color: var(--text-red);
+}
+#span2{
+    color: var(--text-blue);
 }

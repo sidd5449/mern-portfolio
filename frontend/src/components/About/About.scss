@@ -1,17 +1,28 @@
 .app__about{
-    display: flex;
-    flex-direction: column;
-    width: 82vw;
-    flex-wrap: wrap;
-    margin-top: 32vh;
+    margin-top: 30vh;
+}
 
-    h1{
-        font-size: 6vw;
-        
-    }
+.app__about-content{
+    background: rgba(21, 21, 21, 0.26666666666666666);
+    border-radius: 52px 0 52px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #404040;
+    padding: 4vw;
+    margin-top: 10vh;
+
     p{
-        line-height: 4.8vh;
-        word-spacing: 0.4vw;
-        color: var(--text-color);
+        line-height: 5vh;
+        word-spacing: 4px;
     }
+}
+
+.app__about-socials{
+    margin-top: 6vh;
+    display: flex;
+    gap: 4vw;
+}
+#name, #stack{
+    font-family: CPG-bold;
 }

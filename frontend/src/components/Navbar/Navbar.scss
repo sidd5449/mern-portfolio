@@ -1,0 +1,16 @@
+.app__navbar{
+    display: flex;
+    width: 92vw;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 8vw;
+    }
+}
+.app__navbar-menu{
+    width: 36vw;
+    display: flex;
+    justify-content: space-between;
+
+}

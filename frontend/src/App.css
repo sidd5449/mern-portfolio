@@ -1,37 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&family=Yesteryear&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
-    padding-left: 80px;
-    background: linear-gradient(45deg, #171717, #080808);
+    box-sizing: border-box;
     overflow-x: hidden;
+    
+    
+
 }
 ::-webkit-scrollbar{
     width: 0;
-    height: 0;
 }
-a{
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --text-red: #B10000;
+    --text-blue: #008799;
+    --text-gen: #e6e6e6;
+}
+a,
+p{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-gen);
+    font-family: CPG-regular;
+    font-weight: 300;
 }
 
-:root{
-    --text-color: #dcdcdc;
-    --cta-color: #00656c;
-}
-p, a, h2, h3, h4, h5{
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
+h2,
+h3,
+h4{
+    font-family: CPG-bold;
+    color: var(--text-gen);
 }
 
 h1{
-    font-family: 'Yesteryear', cursive;
-    background: -webkit-linear-gradient(45deg,#25d96d, #0936a8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: max-content;
-    font-weight: 200;
+    font-family: Hanson-bold;
+    color: var(--text-gen);
+    font-size: 3vw;
+}
+
+@font-face {
+    font-family: CPG-regular;
+    src: url('./assets/CopperplateGothic\ Regular.ttf');
+}
+@font-face {
+    font-family: CPG-bold;
+    src: url('./assets/CopperplateGothic\ Bold.ttf');
+}
+@font-face {
+    font-family: Hanson-bold;
+    src: url('./assets/Hanson-Bold.ttf');
+}
+.App{
+    height: 94vh;
+    overflow-y: auto;
+    background: url('./assets/bg.png');
+    background-size: cover;
+    padding: 2vw 4vw;
 }

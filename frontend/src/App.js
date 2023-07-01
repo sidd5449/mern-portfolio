@@ -1,16 +1,20 @@
 import './App.css';
-import About from './components/About/About';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
-import Tech from './components/Tech/Tech';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Hero />
       <About />
-      <Tech />
       <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }
