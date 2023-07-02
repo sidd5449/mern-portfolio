@@ -17,6 +17,10 @@ const work = new mongoose.Schema({
         type: String,
         required: true,
     },
+    id: {
+        type : Number,
+        required: true,
+    }
 });
 
 const workSchema = mongoose.model('workSchema', work);

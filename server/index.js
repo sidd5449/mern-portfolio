@@ -22,12 +22,14 @@ console.log();
 
 const data = [
     {
+        id: 1,
         title: 'Lorem Ipsum',
         desc: 'Lorem ipsum dolor sit amet consectuter adipiscing elit',
         ghLink: 'https://github.com',
         preview: 'https://google.com',
     },
     {
+        id: 2,
         title: 'Lorem Ipsum',
         desc: 'Lorem ipsum dolor sit amet consectuter adipiscing elit',
         ghLink: 'https://github.com',
