@@ -20,6 +20,10 @@ const work = new mongoose.Schema({
     id: {
         type : Number,
         required: true,
+    },
+    picturePath:{
+        type: String,
+        required: true,
     }
 });
 
