@@ -12,58 +12,75 @@ const Portfolio = () => {
 
 
   console.log(id);
-  var Array = [];
-    useEffect(() => {
-      axios.get(`http://localhost:8080/getWorks`).then((data) => {
-        setworks(data.data);
-        setloading(false);
-        // console.log(works)
-      }) 
-    },[])
-    
-      
-    
+  useEffect(() => {
+    axios.get(`http://localhost:8080/getWorks`).then((data) => {
+      setworks(data.data);
+      setloading(false);
+      console.log(data)
+    })
+  }, [])
 
-    const dots = [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-    ]
-    
-  
-    if(loading){
-      return(<h1>Loading...</h1>)
+
+
+
+
+  const dots = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+  ]
+
+  const buttonStyles = (number) => {
+    if (number === id + 1) {
+      return "#b10000";
     }
-    else{
-  return (
-    <div className="app__portfolio">
-      <h1>My Portfolio</h1>
-      <div className="app__portfolio-content">
+    else {
+      return "#d9d9d9";
+    }
+  }
+  const buttonWidth = (number) => {
+    if (number === id + 1) {
+      return "2vw";
+    }
+    else {
+      return "0.7vw";
+    }
+  }
+
+
+  if (loading) {
+    return (<h1>Loading...</h1>)
+  }
+  else {
+    return (
+      <div className="app__portfolio">
+        <h1>My Portfolio</h1>
+        <div className="app__portfolio-content">
           <div className="app__portfolio-card">
-            <img src="" alt="" />
+            <img src={`http://localhost:8080/${works[id].picturePath}`} alt="image" />
             <div className="app__content-text">
               <h2>{works[id].title}</h2>
               <p>{works[id].desc}</p>
 
-              <div className="app__socials">
-                <a href={works[id].preview}><FiExternalLink size={25}/></a>
-                <a href={works[id].ghLink}><FiGithub size={25}/></a>
+              <div className="app__portfolio-icons">
+                <a href={works[id].preview}><FiExternalLink size={25} /></a>
+                <a href={works[id].ghLink}><FiGithub size={25} /></a>
               </div>
             </div>
           </div>
-        <div className='app__portfolio-dots'>
-          {dots.map((item) => (
-            <button className='dot' onClick={() => setid(item-1)}>{item}</button>
-          ))}
+          <div className='app__portfolio-dots'>
+            {dots.map((item) => (
+              <button className='dot' onClick={() => setid(item - 1)} style={{ backgroundColor: buttonStyles(item), width: buttonWidth(item) }}></button>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
   }
 }
 

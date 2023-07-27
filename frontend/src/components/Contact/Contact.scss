@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.app__contact{
+    margin-top: 20vh;
+    background: url('../../assets/contact_bg.jpg');
+    width: 100vw;
+    margin-left: -4vw;
+    height: 80vh;
+    padding: 4vw 0;
+    background-size: cover;
+
+    h1{
+        margin-left: 4vw;
+    }
+}
+
+.app__contact-content{
+    display: flex;
+    padding-left: 4vw;
+    padding-top: 6vh;
+    justify-content: space-between;
+}
+.app__contact-content-left{
+
+    h2{
+        font-family: CPG-regular;
+        font-weight: 200;
+    }
+}
+.app__contact-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    gap: 10vh;
+
+    a{
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        gap: 2vw;
+        width: max-content;
+    }
+
+    button{
+        width: 3vw;
+        height: 3vw; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5vh;
+        background: rgba(21, 21, 21, 0.26666666666666666);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid transparent;
+
+    }
+}
+.app__content-right{
+    margin-right: 4vw;
+    padding: 4vw 8vw;
+    height: 80vh;
+    background: rgba(21, 21, 21, 0.26666666666666666);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 52px 0 52px 0;
+    margin-top: calc(-8vw - 6vh);
+    width: 35vw;
+
+    h2{
+        font-size: 1vw;
+        margin-top: 6vh;
+    }
+
+    button{
+        margin-top: 14vh;
+        background: none;
+        width: 10vw;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        color: var(--text-gen);
+        border-radius: 14px 0 14px 0;
+
+    }
+
+
+}
+.app__inputs{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+
+    input{
+        font-family: CPG-regular;
+        color: var(--text-gen);
+        background: none;
+        padding: 2vw 2vw 1vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: none;
+        border-bottom: 2px solid var(--text-gen);
+    }
+    
+}

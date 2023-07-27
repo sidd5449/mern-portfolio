@@ -1,3 +1,43 @@
 .app__portfolio{
     margin-top: 20vh;
 }
+.app__portfolio-card{
+    margin-top: 10vh;
+    display: flex;
+    gap: 4vw;
+}
+.app__portfolio-card img{
+    width: 60vw;
+    height: 65vh;
+    border-radius: 52px 0 52px 0;
+    transition: all ease-in-out .2s;
+}
+
+.app__content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    transition: all ease-in-out .2s;
+}
+
+.app__portfolio-icons{
+    display: flex;
+    gap: 4vw;
+
+}
+.app__portfolio-dots{
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    width: 92vw;
+    justify-content: center;
+    gap: 1.5vw;
+
+    button{
+        border: none;
+        width: 0.7vw;
+        height: 0.7vw;
+        border-radius: 0.7vw;
+        transition: all ease-in-out .2s;
+    }
+}
